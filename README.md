@@ -1,5 +1,7 @@
 # Shikimori Catppuccin Theme ☕️
 
+![Preview](https://i.postimg.cc/zB586Bn1/image.png)
+
 A cozy Catppuccin Mocha theme for [shikimori.one](https://shikimori.one).
 Smooth gradients, soft colors, and a calm anime vibe.
 

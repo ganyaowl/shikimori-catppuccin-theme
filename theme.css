@@ -1,0 +1,184 @@
+/* Catppuccin Mocha Theme for shikimori.one */
+/* Main file */
+@import url("https://shiki-theme.web.app/stable/main.css");
+/* Roboto font */
+@import url("https://shiki-theme.web.app/stable/font-roboto.css");
+@import url("https://css-club.web.app/css/history_types.css");
+
+/* Catppuccin Mocha theme variables */
+@media {
+  :root {
+    /* Text colors */
+    --color-text-primary: #cdd6f4;
+    --color-text-secondary: #a6adc8;
+    --color-text-hint: #9399b2;
+    --color-text-disabled: #7f849c;
+    --color-overlay-text-hovered: rgba(205, 214, 244, 0.08);
+    --color-overlay-text-selected: rgba(205, 214, 244, 0.12);
+    --color-overlay-text-pressed: rgba(205, 214, 244, 0.18);
+
+    /* Link colors */
+    --color-link: #89b4fa;
+    --color-link-hover: #b4befe;
+    --color-link-active: #89dceb;
+
+    /* Primary color (Mauve / Lavender) */
+    --color-primary: #cba6f7;
+    --color-text-on-primary: #1e1e2e;
+    --color-primary-reduced: #b4befe;
+    --color-primary-hovered: #a88ccf;
+    --color-primary-pressed: #9c7ec5;
+    --color-overlay-primary-hovered: rgba(203, 166, 247, 0.08);
+    --color-overlay-primary-selected: rgba(203, 166, 247, 0.12);
+    --color-overlay-primary-pressed: rgba(203, 166, 247, 0.16);
+
+    /* Accent color (Teal) */
+    --color-accent: #94e2d5;
+    --color-text-on-accent: #1e1e2e;
+    --color-accent-reduced: #74c7ec;
+    --color-accent-fade: #89dceb;
+    --color-overlay-accent-hovered: rgba(148, 226, 213, 0.08);
+    --color-overlay-accent-selected: rgba(148, 226, 213, 0.12);
+    --color-overlay-accent-pressed: rgba(148, 226, 213, 0.16);
+
+    /* Background colors */
+    --color-background: #1e1e2e;
+    --color-background-translucent: rgba(30, 30, 46, 0.9);
+    --color-background-dialog: #181825;
+    --color-surface: #181825;
+    --color-surface-hover: #313244;
+    --color-surface-active: #45475a;
+    --color-border: #313244;
+
+    /* Top menu colors */
+    --color-menu-background: rgba(24, 24, 37, 0.8);
+    --color-menu-background-hover: #313244;
+    --color-menu-background-active: #45475a;
+    --color-menu-text-primary: #cdd6f4;
+    --color-menu-text-disabled: #6c7086;
+    --color-menu-icon: #b4befe;
+    --color-menu-search: #313244;
+    --color-menu-search-fade: rgba(205, 214, 244, 0.12);
+
+    /* List button colors */
+    --color-planned: #45475a;
+    --color-onhold: #585b70;
+    --color-watching: #89b4fa;
+    --color-rewatching: #74c7ec;
+    --color-completed: #a6e3a1;
+    --color-dropped: #f38ba8;
+
+    /* Site background */
+    --user-background: url("https://w.wallhaven.cc/full/zy/wallhaven-zyp7jo.jpg?q=80&w=1600&auto=format&fit=crop");
+  }
+}
+
+.bar.simple .bar.s3 {
+  background: #6c7086;
+}
+.bar.simple .bar:hover.s3 {
+  background: #7f849c;
+}
+.bar.simple .bar.s2 {
+  background: #9399b2;
+}
+.bar.simple .bar:hover.s2 {
+  background: #a6adc8;
+}
+.bar.simple .bar.s1 {
+  background: #bac2de;
+}
+.bar.simple .bar:hover.s1 {
+  background: #cdd6f4;
+}
+.bar.simple .bar.s0 {
+  background: #f5e0dc;
+}
+.bar.simple .bar:hover.s0 {
+  background: #f2cdcd;
+}
+
+.activity .graph.vertical .line .bar {
+  transform: translateY(1px);
+  transform-origin: center bottom;
+  animation: activity 1.5s linear infinite;
+}
+.activity .graph.vertical .line .bar:hover {
+  animation: none;
+}
+.activity .graph.vertical .line:nth-of-type(6n + 2) .bar {
+  animation-delay: -0.25s;
+}
+.activity .graph.vertical .line:nth-of-type(6n + 4) .bar {
+  animation-delay: -0.5s;
+}
+.activity .graph.vertical .line:nth-of-type(6n + 3) .bar {
+  animation-delay: -0.75s;
+}
+.activity .graph.vertical .line:nth-of-type(6n + 6) .bar {
+  animation-delay: -1s;
+}
+.activity .graph.vertical .line:nth-of-type(6n + 5) .bar {
+  animation-delay: -1.25s;
+}
+
+/*@keyframes activity {
+  0%, 100% { transform: translateY(1px); }
+  50% { transform: translateY(7px); }
+}*/
+
+/* Avatar with glowing frame */
+.p-profiles .profile-head .avatar {
+  background: url("https://i.postimg.cc/GmWTVL4V/ava.jpg") center / cover;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(203, 166, 247, 0.6);
+}
+.p-profiles .profile-head .avatar img {
+  visibility: hidden;
+}
+
+/* Nickname with soft glow animation */
+#profiles_show .profile-head .c-brief header h1 {
+  background-image: linear-gradient(
+    -225deg,
+    #b4befe 0%,
+    #cba6f7 29%,
+    #89b4fa 67%,
+    #f5c2e7 100%
+  );
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  animation: nickname-glow 6s ease-in-out infinite alternate;
+}
+
+@keyframes nickname-glow {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: 100% center;
+  }
+}
+
+/* Light snowfall effect */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://i.imgur.com/TpOI4DC.png"),
+    url("https://i.imgur.com/92lgmBN.png"),
+    url("https://i.imgur.com/ACiIkIG.png");
+  background-size: 250px, 200px, 150px;
+  animation: snow 16s linear infinite;
+  pointer-events: none;
+}
+@keyframes snow {
+  0% {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}

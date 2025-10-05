@@ -6,69 +6,71 @@
 @import url("https://css-club.web.app/css/history_types.css");
 
 /* Catppuccin Mocha theme variables */
-:root {
-  /* Text colors */
-  --color-text-primary: #cdd6f4;
-  --color-text-secondary: #a6adc8;
-  --color-text-hint: #9399b2;
-  --color-text-disabled: #7f849c;
-  --color-overlay-text-hovered: rgba(205, 214, 244, 0.08);
-  --color-overlay-text-selected: rgba(205, 214, 244, 0.12);
-  --color-overlay-text-pressed: rgba(205, 214, 244, 0.18);
+@media {
+  :root {
+    /* Text colors */
+    --color-text-primary: #cdd6f4;
+    --color-text-secondary: #a6adc8;
+    --color-text-hint: #9399b2;
+    --color-text-disabled: #7f849c;
+    --color-overlay-text-hovered: rgba(205, 214, 244, 0.08);
+    --color-overlay-text-selected: rgba(205, 214, 244, 0.12);
+    --color-overlay-text-pressed: rgba(205, 214, 244, 0.18);
 
-  /* Link colors */
-  --color-link: #89b4fa;
-  --color-link-hover: #b4befe;
-  --color-link-active: #89dceb;
+    /* Link colors */
+    --color-link: #89b4fa;
+    --color-link-hover: #b4befe;
+    --color-link-active: #89dceb;
 
-  /* Primary color (Mauve / Lavender) */
-  --color-primary: #cba6f7;
-  --color-text-on-primary: #1e1e2e;
-  --color-primary-reduced: #b4befe;
-  --color-primary-hovered: #a88ccf;
-  --color-primary-pressed: #9c7ec5;
-  --color-overlay-primary-hovered: rgba(203, 166, 247, 0.08);
-  --color-overlay-primary-selected: rgba(203, 166, 247, 0.12);
-  --color-overlay-primary-pressed: rgba(203, 166, 247, 0.16);
+    /* Primary color (Mauve / Lavender) */
+    --color-primary: #cba6f7;
+    --color-text-on-primary: #1e1e2e;
+    --color-primary-reduced: #b4befe;
+    --color-primary-hovered: #a88ccf;
+    --color-primary-pressed: #9c7ec5;
+    --color-overlay-primary-hovered: rgba(203, 166, 247, 0.08);
+    --color-overlay-primary-selected: rgba(203, 166, 247, 0.12);
+    --color-overlay-primary-pressed: rgba(203, 166, 247, 0.16);
 
-  /* Accent color (Teal) */
-  --color-accent: #94e2d5;
-  --color-text-on-accent: #1e1e2e;
-  --color-accent-reduced: #74c7ec;
-  --color-accent-fade: #89dceb;
-  --color-overlay-accent-hovered: rgba(148, 226, 213, 0.08);
-  --color-overlay-accent-selected: rgba(148, 226, 213, 0.12);
-  --color-overlay-accent-pressed: rgba(148, 226, 213, 0.16);
+    /* Accent color (Teal) */
+    --color-accent: #94e2d5;
+    --color-text-on-accent: #1e1e2e;
+    --color-accent-reduced: #74c7ec;
+    --color-accent-fade: #89dceb;
+    --color-overlay-accent-hovered: rgba(148, 226, 213, 0.08);
+    --color-overlay-accent-selected: rgba(148, 226, 213, 0.12);
+    --color-overlay-accent-pressed: rgba(148, 226, 213, 0.16);
 
-  /* Background colors */
-  --color-background: #1e1e2e;
-  --color-background-translucent: rgba(30, 30, 46, 0.9);
-  --color-background-dialog: #181825;
-  --color-surface: #181825;
-  --color-surface-hover: #313244;
-  --color-surface-active: #45475a;
-  --color-border: #313244;
+    /* Background colors */
+    --color-background: #1e1e2e;
+    --color-background-translucent: rgba(30, 30, 46, 0.9);
+    --color-background-dialog: #181825;
+    --color-surface: #181825;
+    --color-surface-hover: #313244;
+    --color-surface-active: #45475a;
+    --color-border: #313244;
 
-  /* Top menu colors */
-  --color-menu-background: rgba(24, 24, 37, 0.8);
-  --color-menu-background-hover: #313244;
-  --color-menu-background-active: #45475a;
-  --color-menu-text-primary: #cdd6f4;
-  --color-menu-text-disabled: #6c7086;
-  --color-menu-icon: #b4befe;
-  --color-menu-search: #313244;
-  --color-menu-search-fade: rgba(205, 214, 244, 0.12);
+    /* Top menu colors */
+    --color-menu-background: rgba(24, 24, 37, 0.8);
+    --color-menu-background-hover: #313244;
+    --color-menu-background-active: #45475a;
+    --color-menu-text-primary: #cdd6f4;
+    --color-menu-text-disabled: #6c7086;
+    --color-menu-icon: #b4befe;
+    --color-menu-search: #313244;
+    --color-menu-search-fade: rgba(205, 214, 244, 0.12);
 
-  /* List button colors */
-  --color-planned: #45475a;
-  --color-onhold: #585b70;
-  --color-watching: #89b4fa;
-  --color-rewatching: #74c7ec;
-  --color-completed: #a6e3a1;
-  --color-dropped: #f38ba8;
+    /* List button colors */
+    --color-planned: #45475a;
+    --color-onhold: #585b70;
+    --color-watching: #89b4fa;
+    --color-rewatching: #74c7ec;
+    --color-completed: #a6e3a1;
+    --color-dropped: #f38ba8;
 
-  /* Site background */
-  --user-background: url("https://w.wallhaven.cc/full/zy/wallhaven-zyp7jo.jpg?q=80&w=1600&auto=format&fit=crop");
+    /* Site background */
+    --user-background: url("https://w.wallhaven.cc/full/zy/wallhaven-zyp7jo.jpg?q=80&w=1600&auto=format&fit=crop");
+  }
 }
 
 .bar.simple .bar.s3 {

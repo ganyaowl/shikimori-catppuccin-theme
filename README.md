@@ -8,7 +8,13 @@ Smooth gradients, soft colors, and a calm anime vibe.
 
 ## 💾 Quick Install
 
-Add this line to your **Shikimori custom CSS**:
+⚠️ The import method below doesn’t work right now.  
+To apply the theme manually:
+1. Open [theme.css](https://github.com/ganyaowl/shikimori-catppuccin-theme/blob/main/theme.css)  
+2. Copy all its content  
+3. Paste it into your **Shikimori custom CSS** field
+
+~~Add this line to your **Shikimori custom CSS**:~~
 
 ```css
 @import url("https://raw.githubusercontent.com/ganyaowl/shikimori-catppuccin-theme/refs/heads/main/theme.css");
